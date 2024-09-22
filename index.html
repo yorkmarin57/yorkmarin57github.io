@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            overflow: hidden;
+            background: linear-gradient(45deg, #85FFBD, #FFFB7D, #FFC837, #F7971E);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        
+        .bday {
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.3);
+            font-size: 1.8rem; 
+            font-family: 'Arial', sans-serif; 
+            color: #FFF;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            margin-top: 20px; 
+            border-radius: 15px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+        .heart {
+            position: relative;
+            margin: 50px auto; 
+            background-color: yellow;
+            height: 180px;
+            width: 180px;
+            transform: rotate(-45deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: beat 1.5s ease infinite;
+            border: 5px solid #FFD700; 
+        }
+
+        .heart:after,
+        .heart:before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: yellow;
+            border: 5px solid #FFD700; 
+        }
+
+        .heart:before {
+            top: -90px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 90px;
+            top: 0;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(-45deg);
+            }
+        }
+
+        
+        button {
+            background-color: #FFA500;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF4500;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+       
+        .elements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 10px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Flores Amarillas para Hilda</title>
+</head>
+<body>
+
+    <div class="elements">
+       
+        <div class="bday">
+            Te envío esta flor amarilla como símbolo de mi amor que siempre florece para ti. 
+            <br>En cada pétalo va un pedacito de mi corazón, iluminado por tu sonrisa.
+            <br> Feliz Día de las Flores Amarillas, mi Hilda.
+        </div>
+
+        
+        <div class="heart"></div>
+
+        
+        <footer>
+            <button onclick="window.location.href='index2.html'">Haz click aquí</button>
+        </footer>
+    </div>
+
+</body>
+</html>

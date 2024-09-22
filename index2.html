@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Amarilla</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            position: relative;
+            overflow: hidden;
+            background-image: url("paisaje.jpg"); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; 
+            color: rgb(21, 18, 218); 
+        }
+
+       
+        .quote {
+            position: absolute;
+            color: #f3eee9; 
+            font-size: 3.5rem; 
+            font-family: 'Cursive', serif; 
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            max-width: 400px; 
+        }
+
+        
+        .left-quote {
+            left: 10%; 
+            top: 50%; 
+            transform: translateY(-50%); 
+        }
+
+        .right-quote {
+            right: 10%; 
+            top: 50%; 
+            transform: translateY(-50%); 
+        }
+
+        #text {
+            text-align: center; 
+            font-size: 2rem;
+            color: #060606; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body onclick="PlayAudio()">
+    <audio id="musica1" autoplay>
+        <source src="Flores Amarillas2.mp3" type="audio/mpeg">
+        <source src="Flores Amarillas2.ogv" type="audio">
+    </audio>
+
+    <div class="sunflower">
+        <div class="flower_wrapper">
+            <div class="flower_stem"></div>
+            <div class="flower_center"></div>
+            <div class="flower_petal flower_petal-1"></div>
+            <div class="flower_petal flower_petal-2"></div>
+            <div class="flower_petal flower_petal-3"></div>
+            <div class="flower_petal flower_petal-4"></div>
+            <div class="flower_petal flower_petal-5"></div>
+            <div class="flower_petal flower_petal-6"></div>
+            <div class="flower_petal flower_petal-7"></div>
+            <div class="flower_petal flower_petal-8"></div>
+            <div class="flower_petal flower_petal-9"></div>
+            <div class="flower_petal flower_petal-10"></div>
+            <div class="flower_petal flower_petal-11"></div>
+            <div class="flower_petal flower_petal-12"></div>
+
+            <div class="flower_leaf flower_leaf-1"></div>
+            <div class="flower_leaf flower_leaf-2"></div>
+
+            <div class="flower_light flower_light-1"></div>
+            <div class="flower_light flower_light-2"></div>
+            <div class="flower_light flower_light-3"></div>
+            <div class="flower_light flower_light-4"></div>
+            <div class="flower_light flower_light-5"></div>
+            <div class="flower_light flower_light-6"></div>
+            <div class="flower_light flower_light-7"></div>
+            <div class="flower_light flower_light-8"></div>
+        </div>
+    </div>
+
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    <div class="light light-4"></div>
+    <div class="light light-5"></div>
+    <div class="light light-6"></div>
+    <div class="light light-7"></div>
+    <div class="light light-8"></div>
+    <div class="light light-9"></div>
+    <div class="light light-10"></div>
+    <div class="light light-11"></div>
+    <div class="light light-12"></div>
+    
+
+    <div class="quote left-quote">ERES EL GIRASOL QUE ILUMINA MIS DÍAS, Y CADA MOMENTO CONTIGO ES UN REGALO QUE ATESORO.</div>
+    <div class="quote right-quote">TE AMO CON TODO MI CORAZÓN HILDA.</div>
+
+    <p id="text">CON AMOR DE MARINCITO</p>
+</body>
+<script>
+    function PlayAudio(){
+        document.getElementById("musica1").play(); 
+    }
+</script>  
+</html>
